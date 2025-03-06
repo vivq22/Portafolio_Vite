@@ -1,5 +1,5 @@
-const menuIcon = document.querySelector('#menu-icon');
-const navbar = document.querySelector('.navbar');
+const menuIcon = document.querySelector('partials\header.hbs #menu-icon');
+const navbar = document.querySelector('partials\header.hbs .navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
