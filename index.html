@@ -8,26 +8,12 @@
 
         <base href="/vivq22/">
         <link rel="stylesheet" href="src/style.css">
-        
-
-        
+        <link rel="stylesheet" href="less/main.less">     
 
     
     </head>
     <body>
-        <header class="navegador">
-            <a href="#inicio" class="logo"> Vanessa
-                <span>Valladares</span></a>
-
-                <i class="bx bx-menu" id="menu-icon"></i>
-                <nav class="navbar">
-                    <a href="#inicio">Inicio</a>
-                    <a href="#sobre-mi">Sobre mi</a>
-                    <a href="#trabajos">Trabajos</a>
-                    <a href="#habilidades">Habilidades</a>
-                    <a href="#contacto">Contacto</a>
-                </nav>
-        </header>
+      {{> header}}
 
         <section class="inicio" id="inicio">
         
@@ -232,39 +218,7 @@
             </form>
         </section>
 
-        <footer class="footer">
-            <div class="social-icons">
-                <a href="#">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="#">
-                    <i class="bx bxl-instagram-alt"></i>
-                </a>
-                <a href="#">
-                    <i class="bx bxl-twitter"></i>
-                </a>
-            </div>
-
-            <ul class="list">
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-                <li>
-                    <a href="#trabajos">Trabajos</a>
-                </li>
-                <li>
-                    <a href="#sobre-mi">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contacto</a>
-                </li>
-
-            </ul>
-
-            <p class="copy-right">
-                &copy; 2025 Vanessa Valladares. Todos los derechos reservados.
-            </p>
-        </footer>
+        {{> footer}}
 
         <script src="js/main.js"></script>
     </body>
